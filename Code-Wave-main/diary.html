@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Protected Diary</title>
+  <link rel="stylesheet" href="diary.css">
+  
+ 
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="homepage" class="container">
+    <h1>Password Protected Diary</h1>
+    <button id="go-to-login" class="btn">Open Diary</button>
+  </div>
+
+  <!-- Login Page -->
+  <div id="login-page" class="container hidden">
+    <h1>Enter Your Password</h1>
+    <input type="password" id="password-input" placeholder="Enter password">
+    <button id="submit-password" class="btn">Submit</button>
+    <p id="login-error" class="error-message"></p>
+  </div>
+
+  <!-- Diary Page -->
+  <div id="diary-page" class="container hidden">
+    <h1>Welcome to Your Diary</h1>
+    <div class="buttons">
+      <button id="add-entry-btn" class="btn">Add a Diary Entry</button>
+      <button id="lock-diary-btn" class="btn lock-btn">Lock Diary</button>
+    </div>
+    <div id="diary-entries">
+      <p>No diary entries yet.</p>
+    </div>
+  </div>
+
+  <!-- Add Entry Page -->
+  <div id="add-entry-page" class="container hidden">
+    <h1>New Entry</h1>
+    <textarea id="new-diary-entry" rows="6" placeholder="Write your diary entry here..."></textarea>
+    <button id="save-entry-btn" class="btn">Add to Diary</button>
+  </div>
+
+  <script src="diary.js"></script>
+</body>
+</html>
